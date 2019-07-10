@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72B48A81-274B-42AB-B1DC-EB253A78961C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tetris</RootNamespace>
+    <AssemblyName>Tetris</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>tetris_128px.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Engine\Commands\Command.cs" />
+    <Compile Include="Data\Engine\Core\GameBoard.cs" />
+    <Compile Include="Data\Engine\Core\GameShape.cs" />
+    <Compile Include="Data\Engine\Core\PlayField.cs" />
+    <Compile Include="Data\GUI\AboutGame\AboutGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\GUI\AboutGame\AboutGame.Designer.cs">
+      <DependentUpon>AboutGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\GUI\GameResultForm\GameResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\GUI\GameResultForm\GameResultForm.Designer.cs">
+      <DependentUpon>GameResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\GUI\MainForm\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\GUI\MainForm\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\GUI\MenuPauseForm\MenuPauseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\GUI\MenuPauseForm\MenuPauseForm.Designer.cs">
+      <DependentUpon>MenuPauseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\GUI\SettingsForm\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\GUI\SettingsForm\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\GUI\SplashScreen\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\GUI\SplashScreen\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\GUI\fUserControl\fUserControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\GUI\fUserControl\fUserControl.Designer.cs">
+      <DependentUpon>fUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\GUI\UserStatistic\UserStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\GUI\UserStatistic\UserStatistic.Designer.cs">
+      <DependentUpon>UserStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Modules\Users\User.cs" />
+    <Compile Include="Data\Modules\Users\UserManager.cs" />
+    <Compile Include="Data\Modules\RandomBag\RandomBag.cs" />
+    <Compile Include="Data\Engine\Engine.cs" />
+    <Compile Include="Data\Engine\Settings\Settings.cs" />
+    <Compile Include="Data\Game.cs" />
+    <Compile Include="Data\GUI\GameForm\GameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\GUI\GameForm\GameForm.Designer.cs">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Controls.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Controls.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Forms.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Forms.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Game.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Game.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Data\GUI\AboutGame\AboutGame.resx">
+      <DependentUpon>AboutGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\GUI\GameForm\GameForm.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\GUI\GameResultForm\GameResultForm.resx">
+      <DependentUpon>GameResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\GUI\MainForm\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\GUI\MenuPauseForm\MenuPauseForm.resx">
+      <DependentUpon>MenuPauseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\GUI\SettingsForm\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\GUI\SplashScreen\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\GUI\fUserControl\fUserControl.resx">
+      <DependentUpon>fUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\GUI\UserStatistic\UserStatistic.resx">
+      <DependentUpon>UserStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Controls.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Controls.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Forms.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Forms.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Game.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Game.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Modules\Audio\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13341.otf" />
+    <None Include="Resources\пауза-выкл.png" />
+    <None Include="Resources\пауза.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allShapes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spriteBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackBox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tetris_128px.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
