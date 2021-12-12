@@ -1,5 +1,7 @@
 # Игра тетрис на WinForms | Tetris Game  2019
 
+Каждый класс, метод и переменные имеют комментирий. Весь проект выполнен в ООП стиле.
+
 ## Трейлер
 [![Смотреть трейлер](https://i.ytimg.com/vi/9C888evU3eI/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCcs2aRkhO12Mw_EbJDJAvM9Br1jQ)](https://youtu.be/9C888evU3eI)
 
