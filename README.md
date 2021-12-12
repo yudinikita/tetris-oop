@@ -66,3 +66,23 @@
 - Кнопки для перехода в меню или начала новой игры
 
 ## Скриншоты
+
+### Главное меню
+
+![Главное меню](https://user-images.githubusercontent.com/36636599/145730171-34873d94-c717-49b8-b94b-1236bf62822c.png)
+
+### Профиль игрока
+
+![Профиль игрока](https://user-images.githubusercontent.com/36636599/145730186-9c53eef6-bd4e-4390-bbe2-626ed8c2e33e.png)
+
+### Настройки
+
+![settings](https://user-images.githubusercontent.com/36636599/145730203-58398185-f4a8-4dbf-a32a-a2e2422951e0.png)
+
+### Игра с высокой графикой
+
+![game_1](https://user-images.githubusercontent.com/36636599/145730206-d5d7ed86-ba08-4184-a960-a1b29719c071.png)
+
+### Игра с низкой графикой
+
+![game_2](https://user-images.githubusercontent.com/36636599/145730207-8a00bd2d-0a0e-453f-aaec-131da9af8fbc.png)
