@@ -2,6 +2,8 @@
 
 Каждый класс, метод и переменные имеют комментирий. Весь проект выполнен в ООП стиле.
 
+![Игра с низкой графикой](https://user-images.githubusercontent.com/36636599/145730207-8a00bd2d-0a0e-453f-aaec-131da9af8fbc.png)
+
 ## Трейлер
 [![Смотреть трейлер](https://i.ytimg.com/vi/9C888evU3eI/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCcs2aRkhO12Mw_EbJDJAvM9Br1jQ)](https://youtu.be/9C888evU3eI)
 
@@ -77,12 +79,12 @@
 
 ### Настройки
 
-![settings](https://user-images.githubusercontent.com/36636599/145730203-58398185-f4a8-4dbf-a32a-a2e2422951e0.png)
+![Настройки](https://user-images.githubusercontent.com/36636599/145730203-58398185-f4a8-4dbf-a32a-a2e2422951e0.png)
 
 ### Игра с высокой графикой
 
-![game_1](https://user-images.githubusercontent.com/36636599/145730206-d5d7ed86-ba08-4184-a960-a1b29719c071.png)
+![Игра с высокой графикой](https://user-images.githubusercontent.com/36636599/145730206-d5d7ed86-ba08-4184-a960-a1b29719c071.png)
 
 ### Игра с низкой графикой
 
-![game_2](https://user-images.githubusercontent.com/36636599/145730207-8a00bd2d-0a0e-453f-aaec-131da9af8fbc.png)
+![Игра с низкой графикой](https://user-images.githubusercontent.com/36636599/145730207-8a00bd2d-0a0e-453f-aaec-131da9af8fbc.png)
