@@ -88,3 +88,9 @@
 ### Игра с низкой графикой
 
 ![Игра с низкой графикой](https://user-images.githubusercontent.com/36636599/145730207-8a00bd2d-0a0e-453f-aaec-131da9af8fbc.png)
+
+---
+
+> Site [yudinikita.ru](https://yudinikita.ru) &nbsp;&middot;&nbsp;
+> Email <mail@yudinikita.ru> &nbsp;&middot;&nbsp;
+> GitHub [@yudinikita](https://github.com/yudinikita)
